@@ -7,8 +7,12 @@
     --var-colorBackingEscuro: #0A0300;
     --var-Divisor: #2f170171;
     --var-FontHeader: 'Roboto', sans-serif;
+    --var-FontParágrafo: 'Roboto Condensed', sans-serif;
+    --var-Cores-Links: #633000;
+    --var-Cores-LinksDark: #3b1d00;
 }
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&family=Roboto+Condensed&family=Roboto:wght@500&display=swap');
 
 /*Animações*/
 @keyframes animationMissionMars {
@@ -54,7 +58,7 @@ header{
 #Redes{
     position: absolute;
     top: calc(50vh - 40px);
-    right: 10px;
+    right: 20px;
     display: flex;
     flex-direction: column;
     height: 80px;
@@ -69,21 +73,16 @@ header{
 #Redes img:hover{
     filter: brightness(0.8);
 }
-#DivSeparadora{
-    height: 25px;
-    width: 100%;
-    background-color: var(--var-Divisor);
-    position: absolute;
-    top: 100vh;
-    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.199);
-}
+
 
 #Exploração-em-marte{
-    padding-top: 50px;
+    padding-top: 130px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    box-shadow: 0px -20px 20px 20px var(--var-colorBackingEscuro);
 }
 .titleTopic{
     font-family: var(--var-FontHeader);
@@ -96,5 +95,34 @@ header{
 #TextExploration{
     height: 150px;
     overflow-y: hidden;
+    font-family: var(--var-FontParágrafo);
+    color: rgba(255, 255, 255, 0.753);
+}
+#bttTextMore{
+    background: none;
+    outline: none;
+    margin-top: 10px;
+    color: var(--var-Cores-Links);
+    font-family: var(--var-FontParágrafo);
+    border: none;
+    cursor: pointer;
+}
+#bttTextMore:hover{
+    color: var(--var-Cores-LinksDark)
+}
+#imagemMarteExploration{
+    position: absolute;
+    top: calc(100vh + 50px);
+    right: 0px;
+    z-index: -1;
+    filter: opacity(0.5);
+}
+
+
+#Principais-missões{
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 /*responsividade*/
