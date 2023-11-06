@@ -56,7 +56,7 @@ header{
     margin-left: -50px;
 }
 #Redes{
-    position: absolute;
+    position: fixed;
     top: calc(50vh - 40px);
     right: 20px;
     display: flex;
@@ -64,6 +64,10 @@ header{
     height: 80px;
     align-items: center;
     justify-content: space-between;
+    padding: 20px 10px;
+    border-radius: 20px;
+    border: 2px solid white;
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.186);
 }
 #Redes img{
     width: 25px;
@@ -77,12 +81,11 @@ header{
 
 #Exploração-em-marte{
     padding-top: 130px;
-    height: 300px;
+    height: max-content;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    box-shadow: 0px -20px 20px 20px var(--var-colorBackingEscuro);
+    box-shadow: 0px -20px 40px 7px var(--var-colorBackingEscuro);
 }
 .titleTopic{
     font-family: var(--var-FontHeader);
@@ -90,9 +93,10 @@ header{
 }
 #BoxTextExploration{
     width: 70%;
-    margin-top: 20px;
+    height: max-content;
 }
 #TextExploration{
+    margin-top: 40px;
     height: 150px;
     overflow-y: hidden;
     font-family: var(--var-FontParágrafo);
@@ -104,11 +108,12 @@ header{
     margin-top: 10px;
     color: var(--var-Cores-Links);
     font-family: var(--var-FontParágrafo);
+    font-weight: 900;
     border: none;
     cursor: pointer;
 }
 #bttTextMore:hover{
-    color: var(--var-Cores-LinksDark)
+    color: var(--var-Cores-LinksDark);
 }
 #imagemMarteExploration{
     position: absolute;
@@ -120,9 +125,124 @@ header{
 
 
 #Principais-missões{
-    margin-top: 150px;
+    margin-top: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.mission{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 80px;
+    height: 200px;
+    width: 80%;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 3px solid var(--var-Cores-Links);
+}
+.mission h2{
+    font-family: var(--var-FontHeader);
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.mission p{
+    font-family: var(--var-FontParágrafo);
+    max-width: 500px;
+    max-height: 100px;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 10pt;
+    overflow-y: hidden;
+}
+#missão1{
+    background-image: url('imagens/imagem-background-mission1-G.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    box-shadow: inset 0px 0px 500px 10px rgb(0, 0, 0);
+    background-position: center center;
+}
+#missão1 img{
+    height: 150px;
+}
+#missão2{
+    background-image: url('imagens/imagem-backingGround-mission2-G.png');
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    box-shadow: inset 0px 0px 500px 10px rgb(0, 0, 0);
+}
+#missão2 img{
+    margin-right: 60px;
+}
+#missão3{
+    background-image: url('imagens/imagem-backingground-Mission3-G.png');
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    box-shadow: inset 0px 0px 500px 10px rgb(0, 0, 0);
+}
+#missão3 img{
+    margin-right: 50px;
+}
+#missão4{
+    background-image: url('imagens/imagem-backing-mission4-G.png');
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    box-shadow: inset 0px 0px 500px 10px rgb(0, 0, 0);
+}
+#missão5{
+    background-image: url('imagens/imagem-backGround-mission5-G.png');
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    box-shadow: inset 0px 0px 500px 10px rgb(0, 0, 0);
+}
+
+footer{
+    margin-top: 100px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--var-Cores-LinksDark);
+}
+#RedirectToProjects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 150px;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+    font-family: var(--var-FontHeader);
+    font-weight: 400;
+    font-size: 11pt;
+}
+footer a:hover{
+    color: rgba(128, 128, 128, 0.641);
+}
+
+#returnTop{
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    padding: 10px 15px;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+#returnTop:hover{
+    background-color: var(--var-colorBackingEscuro);
+    transition: 0.2s;
+    margin-bottom: 10px;
+    box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.352);
+}
+#returnTop:active{
+    scale: 0.9;
 }
 /*responsividade*/
