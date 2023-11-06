@@ -245,4 +245,63 @@ footer a:hover{
 #returnTop:active{
     scale: 0.9;
 }
+
+
+
 /*responsividade*/
+@media (max-width: 900px) {
+    header{
+        height: 80vh;
+    }
+    #Exploração-em-marte{
+        box-shadow: none;
+    }
+    #imagemMarteExploration{
+        top: 90vh;
+    }
+    #Redes{
+        position: fixed;
+        top: calc(40vh - 50px);
+        backdrop-filter: blur(15px);
+    }
+}
+@media (max-width: 720px){
+    header{
+        background-size: 200%;
+    }
+    #TitleSite{
+        font-size: 20pt;
+        margin-left: 100px;
+    }
+}
+@media (max-width: 550px){
+    #TitleSite{
+        font-size: 15pt;
+    }
+}
+@media (max-width: 400px){
+    header{
+        background-position: bottom center;
+        background-size: 250%;
+    }
+    #TitleSite{
+        font-size: 10pt;
+    }
+    #Redes{
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        width: 60px;
+        height: 10px;
+        padding: 15px 15px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        transition: 1s;
+    }
+    #Redes img{
+        width: 18px;
+        height: 18px;
+    }
+}
