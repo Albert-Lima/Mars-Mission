@@ -8,7 +8,7 @@
     --var-Divisor: #2f170171;
     --var-FontHeader: 'Roboto', sans-serif;
     --var-FontParágrafo: 'Roboto Condensed', sans-serif;
-    --var-Cores-Links: #633000;
+    --var-Cores-Links: #904600;
     --var-Cores-LinksDark: #3b1d00;
 }
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&family=Roboto:wght@500&display=swap');
@@ -277,6 +277,35 @@ footer a:hover{
 @media (max-width: 550px){
     #TitleSite{
         font-size: 15pt;
+    }
+    .titleTopic{
+        font-size: 12pt;
+    }
+    .TitleMission{
+        font-size: 12pt
+    }
+    .mission{
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    #missão1, #missão2, #missão3, #missão4, #missão5{
+        background-size: 150%;
+    }
+    #missão1 img{
+        display: none;
+    }
+    #missão2 img{
+        display: none;
+    }
+    #missão3 img{
+        display: none;
+    }
+    #missão4 img{
+        display: none;
+    }
+    #missão5 img{
+        display: none;
     }
 }
 @media (max-width: 400px){
