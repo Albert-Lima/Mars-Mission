@@ -9,7 +9,7 @@ function MostrarTexto(){
     BttMostrarMais.removeEventListener('click', MostrarTexto)
     BttMostrarMais.addEventListener('click', MostrarMenos)
     function MostrarMenos(){
-
+        BttMostrarMais.innerText = 'mostrar mais'
         BttMostrarMais.removeAttribute('style')
         TextoExploração.removeAttribute('style')
         BttMostrarMais.addEventListener('click', MostrarTexto)
