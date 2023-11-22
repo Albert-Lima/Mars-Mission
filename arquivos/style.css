@@ -146,14 +146,13 @@ header{
     margin-left: 20px;
     margin-top: 20px;
 }
-.mission p{
+.description-mission{
     font-family: var(--var-FontParágrafo);
     max-width: 500px;
     max-height: 100px;
     margin-top: 20px;
     margin-left: 20px;
     font-size: 10pt;
-    overflow-y: hidden;
 }
 #missão1{
     background-image: url('imagens/imagem-background-mission1-G.png');
@@ -288,6 +287,21 @@ footer a:hover{
         justify-content: center;
         align-items: center;
         padding: 10px;
+    }
+    .description-mission{
+        overflow-y: scroll;
+    }
+    .description-mission::-webkit-scrollbar{
+        width: 4px;
+    }
+    .description-mission::-webkit-scrollbar-thumb{
+        background-color: white;
+        border-radius: 5px;
+    }
+    .description-mission::-webkit-scrollbar-track{
+        background-color: transparent;
+        border: 1px white solid;
+        border-radius: 5px;
     }
     #missão1, #missão2, #missão3, #missão4, #missão5{
         background-size: 150%;
